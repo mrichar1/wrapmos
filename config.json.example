@@ -1,0 +1,13 @@
+{
+  "wifi": {
+    "ap": {
+      "essid": "my_ap",
+      "authmode": 3,
+      "password": "my_password"
+    },
+    "client": {
+      "ssid": "my_home_net",
+      "password": "my_home_password"
+    },
+  }
+}
