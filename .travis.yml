@@ -3,5 +3,6 @@ python:
 - 3.6
 install:
 - sudo pip install travis-sphinx
+- sudo pip install sphinx_rtd_theme
 script:
  - docs/sphinx.sh  
