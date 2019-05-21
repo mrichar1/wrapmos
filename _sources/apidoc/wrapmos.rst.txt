@@ -1,0 +1,19 @@
+wrapmos package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    wrapmos.config
+    wrapmos.system
+    wrapmos.wifi
+
+Module contents
+---------------
+
+.. automodule:: wrapmos
+    :members:
+    :undoc-members:
+    :show-inheritance:

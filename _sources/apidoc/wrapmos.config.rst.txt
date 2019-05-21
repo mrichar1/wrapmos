@@ -1,0 +1,10 @@
+wrapmos.config package
+======================
+
+Module contents
+---------------
+
+.. automodule:: wrapmos.config
+    :members:
+    :undoc-members:
+    :show-inheritance:

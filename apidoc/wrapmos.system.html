@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>wrapmos.system package &mdash; Wrapmos  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="wrapmos.wifi package" href="wrapmos.wifi.html" />
+    <link rel="prev" title="wrapmos.config package" href="wrapmos.config.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Wrapmos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="wrapmos.html">wrapmos package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="wrapmos.config.html">wrapmos.config package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">wrapmos.system package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wrapmos.wifi.html">wrapmos.wifi package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wrapmos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="wrapmos.html">wrapmos package</a> &raquo;</li>
+        
+      <li>wrapmos.system package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apidoc/wrapmos.system.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wrapmos-system-package">
+<h1>wrapmos.system package<a class="headerlink" href="#wrapmos-system-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-wrapmos.system">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wrapmos.system" title="Permalink to this headline">¶</a></h2>
+<p>“Functions to handle the system (boot, sleep etc).</p>
+<dl class="function">
+<dt id="wrapmos.system.pin_callback">
+<code class="descclassname">wrapmos.system.</code><code class="descname">pin_callback</code><span class="sig-paren">(</span><em>callback</em>, <em>pin=14</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrapmos/system.html#pin_callback"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrapmos.system.pin_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>If pin is pulled down, call a callback.</p>
+<p>This is useful to e.g. run particular code on boot.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>callback</strong> – Method to be called.</li>
+<li><strong>pin</strong> – Pin to monitor.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrapmos.system.stop_after">
+<code class="descclassname">wrapmos.system.</code><code class="descname">stop_after</code><span class="sig-paren">(</span><em>delay=60</em>, <em>action='reset'</em>, <em>wake_after=600</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrapmos/system.html#stop_after"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrapmos.system.stop_after" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start a timer thread, which will restart/sleep the device after ‘delay’ secs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>delay</strong> – Delay before restart/sleep.</li>
+<li><strong>action</strong> – Reset or sleep the device.</li>
+<li><strong>wake_after</strong> – If sleeping, how long until wake (in seconds).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="wrapmos.wifi.html" class="btn btn-neutral float-right" title="wrapmos.wifi package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="wrapmos.config.html" class="btn btn-neutral float-left" title="wrapmos.config package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Matthew Richardson
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
